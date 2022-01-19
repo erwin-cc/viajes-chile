@@ -4,6 +4,10 @@
     background-color: transparent !important;
   }
 
+a {
+    text-shadow: 2px 2px 4px rgb(180,180,180);
+}  
+
 /*Hero-Section*/
 
 #hero-section img {
@@ -53,4 +57,10 @@ p i {
 #contacto {
     background-color: #000;
     color: #FFF;
+}
+
+/*Footer*/
+
+.txt-footer {
+    font-family: Helvetica;
 }

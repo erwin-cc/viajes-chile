@@ -19,7 +19,7 @@
 <body>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="/assets/img/viajes.svg" height="25px"> Viajes Chile</a>
+            <a class="navbar-brand" href="#"><img src="assets/img/viajes.svg" height="25px"> Viajes Chile</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -28,16 +28,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Inicio</a>
+                        <a class="nav-link active" href="#hero-section">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Quienes Somos</a>
+                        <a class="nav-link active" href="#quienes-somos">Quienes Somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Destacados</a>
+                        <a class="nav-link active" href="#destacados">Destacados</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link active" href="#contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -119,11 +119,11 @@
     <section id="destacados">
         <div class="container">
             <h4 class="text-center fw-normal py-4 pb-3">DESTACADOS</h4>
-            <hr class="linea2 mx-auto">
+            <hr class="linea2 mx-auto mb-4">
         </div>
         <div class="container cards">
             <div class="row g-2">
-                <div class="col-12 col-md-6 col-xl-3">
+                <div class="col-12 col-md-6 col-xl-3 mb-2">
                     <div class="card border-white bg-info">
                         <img src="assets/img/card1.jpg" class="card-img-top"
                             alt="Imagen isla en medio de un lago en el sur">
@@ -134,7 +134,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-xl-3">
+                <div class="col-12 col-md-6 col-xl-3 mb-2">
                     <div class="card border-white bg-info">
                         <img src="assets/img/card2.jpg" class="card-img-top"
                             alt="Imagen isla en medio de un lago en el sur">
@@ -145,7 +145,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-xl-3">
+                <div class="col-12 col-md-6 col-xl-3 mb-2">
                     <div class="card border-white bg-info">
                         <img src="assets/img/card3.jpg" class="card-img-top"
                             alt="Imagen isla en medio de un lago en el sur">
@@ -156,7 +156,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-xl-3">
+                <div class="col-12 col-md-6 col-xl-3 mb-2">
                     <div class="card border-white bg-info">
                         <img src="assets/img/card4.jpg" class="card-img-top"
                             alt="Imagen isla en medio de un lago en el sur">
@@ -171,27 +171,45 @@
         </div>
     </section>
 
-    <form id="contacto">
-        <div class="container">
+    <section id="contacto">
+        <div class="container pt-5">
             <h4 class="text-center fw-normal py-4 pb-3">CONTACTO</h4>
             <hr class="linea2 mx-auto">
         </div>
-        <div class="container">
-            <div class="mb-3">
-                <label for="txt-nombre" class="form-label">Nombre</label>
-                <input type="name" class="form-control" id="txt-nombre" placeholder="Ej: Armando Pérez">
+        <form>
+            <div class="container pb-5">
+                <div class="mb-3">
+                    <label for="txt-nombre" class="form-label">Nombre</label>
+                    <input type="name" class="form-control" id="txt-nombre" placeholder="Ej: Armando Pérez">
+                </div>
+                <div class="mb-3">
+                    <label for="txt-asunto" class="form-label">Asunto</label>
+                    <input type="name" class="form-control" id="txt-asunto">
+                </div>
+                <div class="mb-3">
+                    <label for="txt-msje" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="txt-msje" rows="6"></textarea>
+                </div>
+                <button type="submit" class="btn btn-info text-white">Enviar</button>
             </div>
-            <div class="mb-3">
-                <label for="txt-asunto" class="form-label">Asunto</label>
-                <input type="name" class="form-control" id="txt-asunto">
+        </form>
+    </section>
+
+    <footer class="bg-info">
+        <div class="container-fluid">
+            <div class="row fs-4">
+                <div class="col-12 col-md-6 text-white text-center pt-3 pb-0 pb-md-3">
+                    <p class="txt-footer">VIAJES CHILE</p>
+                </div>
+                <div class="col-12 col-md-6 text-white text-center pt-1 pt-md-3 pb-4">
+                    <i class="fab fa-github-square"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-twitter-square"></i>
+                    <i class="fab fa-facebook-square"></i>
+                </div>
             </div>
-            <div class="mb-3">
-                <label for="txt-msje" class="form-label">Mensaje</label>
-                <textarea class="form-control" id="txt-msje" rows="6"></textarea>
-            </div>
-            <button type="submit" class="btn btn-info text-white">Enviar</button>
         </div>
-    </form>
+    </footer>
 
     <!-- jQuery v3.6.0 -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
