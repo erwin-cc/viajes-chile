@@ -1,0 +1,28 @@
+/* Navegador */
+
+.nav .navbar {
+    background-color: transparent !important;
+  }
+
+/*Quienes Somos*/
+
+#quienes-somos {
+    background-color: #000;
+    color: #FFF;
+}
+
+.linea1 {
+    width: 80%;
+}
+
+p i {
+    padding: 5px 0px;
+    font-size: 20px;
+}
+
+/*Destacados*/
+
+#destacados {
+    background-color: #000;
+    color: #FFF;
+}
