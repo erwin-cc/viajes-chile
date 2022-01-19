@@ -4,11 +4,23 @@
     background-color: transparent !important;
   }
 
+/*Hero-Section*/
+
+#hero-section img {
+    width:100%;
+    max-height: 85vh;
+    object-fit: cover;
+ }
+
 /*Quienes Somos*/
 
 #quienes-somos {
     background-color: #000;
     color: #FFF;
+}
+
+h4 {
+    font-family: Helvetica;
 }
 
 .linea1 {
@@ -23,6 +35,22 @@ p i {
 /*Destacados*/
 
 #destacados {
+    background-color: #000;
+    color: #FFF;
+}
+
+.linea1 {
+    width: 90%;
+}
+
+#destacados .cards img {
+    width: 100% !important;
+    height: 200px;
+}
+
+/*Contacto*/
+
+#contacto {
     background-color: #000;
     color: #FFF;
 }

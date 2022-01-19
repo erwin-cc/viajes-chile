@@ -44,19 +44,18 @@
         </div>
     </nav>
 
-    <header id="hero-section">
+    <header id="hero-section" class="container-fluid m-0 p-0">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="Imagen de alpacas en el altiplano">
+                    <img src="assets/img/carousel1.jpg" class="d-block" alt="Imagen de alpacas en el altiplano">
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/img/carousel2.jpg" class="d-block w-100"
+                    <img src="assets/img/carousel2.jpg" class="d-block"
                         alt="Imagen de moais en Isla de Pascua al atardecer">
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/img/carousel3.jpg" class="d-block w-100"
-                        alt="Imagen de pingüino bebe cerca de su nido">
+                    <img src="assets/img/carousel3.jpg" class="d-block" alt="Imagen de pingüino bebe cerca de su nido">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
@@ -79,7 +78,7 @@
         </div>
         <div class="container">
             <div class="row g-2 py-4">
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4 my-3">
                     <p class="bg-info text-center mb-0"><i class="fas fa-plane"></i></p>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam eaque distinctio reprehenderit
@@ -90,7 +89,7 @@
                         sapiente quod maiores! Quam, omnis numquam.
                     </p>
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4 my-3">
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam eaque distinctio reprehenderit
                         temporibus nam quae vitae nobis non iusto assumenda ad eveniet voluptates quisquam, tenetur quas
@@ -101,7 +100,7 @@
                     </p>
                     <p class="bg-info text-center mb-0"><i class="fas fa-mountain"></i></p>
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4 my-3">
                     <p class="bg-info text-center mb-0"><i class="fas fa-route"></i></p>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam eaque distinctio reprehenderit
@@ -119,11 +118,80 @@
 
     <section id="destacados">
         <div class="container">
-            <h4 class="text-center fw-normal py-4 pb-3">Destacados</h4>
+            <h4 class="text-center fw-normal py-4 pb-3">DESTACADOS</h4>
             <hr class="linea2 mx-auto">
+        </div>
+        <div class="container cards">
+            <div class="row g-2">
+                <div class="col-12 col-md-6 col-xl-3">
+                    <div class="card border-white bg-info">
+                        <img src="assets/img/card1.jpg" class="card-img-top"
+                            alt="Imagen isla en medio de un lago en el sur">
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et unde nisi
+                                excepturi tempora quam autem quasi facilis neque dignissimos eos, impedit nulla beatae
+                                provident voluptas iste possimus quidem nobis fugiat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <div class="card border-white bg-info">
+                        <img src="assets/img/card2.jpg" class="card-img-top"
+                            alt="Imagen isla en medio de un lago en el sur">
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et unde nisi
+                                excepturi tempora quam autem quasi facilis neque dignissimos eos, impedit nulla beatae
+                                provident voluptas iste possimus quidem nobis fugiat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <div class="card border-white bg-info">
+                        <img src="assets/img/card3.jpg" class="card-img-top"
+                            alt="Imagen isla en medio de un lago en el sur">
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et unde nisi
+                                excepturi tempora quam autem quasi facilis neque dignissimos eos, impedit nulla beatae
+                                provident voluptas iste possimus quidem nobis fugiat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <div class="card border-white bg-info">
+                        <img src="assets/img/card4.jpg" class="card-img-top"
+                            alt="Imagen isla en medio de un lago en el sur">
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et unde nisi
+                                excepturi tempora quam autem quasi facilis neque dignissimos eos, impedit nulla beatae
+                                provident voluptas iste possimus quidem nobis fugiat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
+    <form id="contacto">
+        <div class="container">
+            <h4 class="text-center fw-normal py-4 pb-3">CONTACTO</h4>
+            <hr class="linea2 mx-auto">
+        </div>
+        <div class="container">
+            <div class="mb-3">
+                <label for="txt-nombre" class="form-label">Nombre</label>
+                <input type="name" class="form-control" id="txt-nombre" placeholder="Ej: Armando Pérez">
+            </div>
+            <div class="mb-3">
+                <label for="txt-asunto" class="form-label">Asunto</label>
+                <input type="name" class="form-control" id="txt-asunto">
+            </div>
+            <div class="mb-3">
+                <label for="txt-msje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="txt-msje" rows="6"></textarea>
+            </div>
+            <button type="submit" class="btn btn-info text-white">Enviar</button>
+        </div>
+    </form>
 
     <!-- jQuery v3.6.0 -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
