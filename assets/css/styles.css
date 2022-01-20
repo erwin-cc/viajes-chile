@@ -63,6 +63,11 @@ p i {
     object-fit: cover;
 }
 
+.bg-hover {
+    background-color: rgba(255,255,255,0.2) !important;
+    box-shadow: 0px 0px 6px 3px rgb(200, 200, 200);
+}
+
 /*Contacto*/
 
 #contacto {
@@ -77,5 +82,9 @@ p i {
 }
 
 footer a {
-    color: inherit;
+    color:inherit;
+}
+
+footer a:hover {
+    color:inherit;
 }
